@@ -31,3 +31,4 @@ Remove-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 * https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
 * https://superuser.com/questions/821112/add-line-to-text-file-after-specific-line-with-powershell
 * https://forum.sys-adm.in/t/windows-ssh-new-pssession-subsystem-request-failed-on-channel-0/7600
+* https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting
