@@ -21,7 +21,8 @@ $NewContent = Get-Content -Path $config |
             # Add output additional line
             $param
         }
- 
+# General Actions
+# Install latest PS
 iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
 
 # Install the OpenSSH Server
@@ -30,7 +31,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 # Set sshd to automatic mode
 Set-Service -Name sshd -StartupType 'Automatic'
 
-# Run sshd
+# Run sshd (for sshd_config file creation)
 Start-Service sshd
 
 # Add pwsh subsystem param in to sshd_config
